@@ -1,9 +1,7 @@
 //laba 4 (1)
 /*
 
-#include <iostream>
-
-#include <cstdlib>
+#include <iostream>     
 
 using namespace std;
 
@@ -13,15 +11,15 @@ int main()
 
 {
 
-	int a, b, S, P;
+	int a, b, S, P;   //объявление переменных а, b, S, P
 
-	cin >> a >> b;
+	cin >> a >> b;     //ввод двух сторон 
 
-	S = a * b;
+	S = a * b;           //нахождение площади
 
-	P = 2 * (a + b);
+	P = 2 * (a + b);         //нахождение периметра
 
-	cout << S << " " << P << endl;
+	cout << S << " " << P << endl;      //вывод площади и периметра
 
 	return 0;
 
@@ -44,15 +42,15 @@ int main()
 
 {
 
-   float pi = 3.14;
+   float pi = 3.14;        //объявление переменной пи
 
-   float d,L;
+   float d,L;              //объявление переменных диаметра и длины
 
-   cin >> d;
+   cin >> d;                //ввод диаметра
 
-   L = d * pi;
+   L = d * pi;                //подсчет длины
 
-   cout << L << endl;
+   cout << L << endl;         //вывод длины
 
    return 0;
 
@@ -77,15 +75,13 @@ int main()
 
 {
 
-   float a,b,A;
+   float a,b,A;       // объявление переменных 
 
+   cin >> a >> b;         // ввод двух чисел
 
+   A = (a+b)/2;               //подсчет срреднего арифметического
 
-   cin >> a >> b;
-
-   A = (a+b)/2;
-
-   cout << A << endl;
+   cout << A << endl;           //вывод ср.афр.
 
    return 0;
 
@@ -107,19 +103,19 @@ int main()
 
 {
 
-   float a,b;
+   float a,b;                      
 
 
 
-   cin >> a >> b;
+   cin >> a >> b;                 //объявление двух чисел
 
-   cout << (a * a) + (b * b) << endl;
+   cout << (a * a) + (b * b) << endl;        //вывод:  сумма квадратов чисел
 
-   cout << (a * a) - (b * b) << endl;
+   cout << (a * a) - (b * b) << endl;        //вывод:  разность квадратов
 
-   cout << (a * a) * (b * b) << endl;
+   cout << (a * a) * (b * b) << endl;        //вывод:  произведение
 
-   cout << (a * a) / (b * b) << endl;
+   cout << (a * a) / (b * b) << endl;       //вывод:  деление
 
    return 0;
 
@@ -148,13 +144,13 @@ float a, b;
 
 cin >> a >> b;
 
-cout << abs(a) + abs(b) << endl;
+cout << abs(a) + abs(b) << endl;          //сумма модулей чисел
 
-cout << abs(a) - abs(b) << endl;
+cout << abs(a) - abs(b) << endl;          //разность модулей 
 
-cout << abs(a) * abs(b) << endl;
+cout << abs(a) * abs(b) << endl;         //произведение
 
-cout << abs(a) / abs(b) << endl;
+cout << abs(a) / abs(b) << endl;         //деление
 
 return 0;
 
