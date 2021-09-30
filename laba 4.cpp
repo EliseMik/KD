@@ -1,9 +1,9 @@
 //laba 4 (1)
 /*
 
-#include <iostream>     
+#include <iostream>       //подключение библиотеки ввода-вывода  
 
-using namespace std;
+using namespace std;       //использование пространства std
 
 
 
