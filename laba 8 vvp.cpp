@@ -10,7 +10,7 @@ int main()
 	float x;
 	int a;
 	cin >> x;
-	a = x / 1024;
+	a = x / 1024;              //перевод байтов в килобайты
 	cout << a << endl;
 	return 0;
 }
@@ -26,7 +26,7 @@ int main()
 {
 	int a, b;
 	cin >> a >> b;
-	cout << a / b << endl;
+	cout << a / b << endl;      // кол-во целых отрезков б в а
 	return 0;
 }
 */
@@ -41,7 +41,7 @@ int main()
 {
 	int a, b;
 	cin >> a >> b;
-	cout << a%b << endl;
+	cout << a%b << endl;        //незанятая часть а, занятая отрезками б
 	return 0;
 }
 */
@@ -56,7 +56,7 @@ int main()
 {
 	int a;
 	cin >> a;
-	cout << a % 10 << a / 10 << endl;
+	cout << a % 10 << a / 10 << endl;       //поменяли цифры местами
 	return 0;
 }
 
@@ -72,7 +72,7 @@ int main()
 {
 	int a;
 	cin >> a;
-	cout << a % 100 << a / 100 << endl;
+	cout << a % 100 << a / 100 << endl;      //зачеркнули цифру слева, приписали справа
 	return 0;
 }
 */
