@@ -1,0 +1,73 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+
+// laba 9.1
+
+/*
+int main()
+{
+	int n;
+	cin >> n;
+	cout << n % 60 << endl;        //кол-во секунд, прошедших с последней минуты
+	return 0;
+}
+*/
+
+//laba 9.2
+
+
+/*
+int main()
+{
+	int k;
+	cin >> k;                 //ввод номера дня
+	cout << k % 7 << endl;      //вычисление номера дня недели
+	return 0;
+}
+*/
+
+
+
+// laba 9.3
+
+/*
+
+int main()
+{
+	int k, n;
+	cin >> n>> k;                    //ввод номера недели(1 янв) и день
+	cout << (k+n-1)%7 << endl;           //вывод номера недели введенного дня
+	return 0;
+}
+*/
+
+
+//laba 9.4
+
+/*
+
+int main()
+{
+	int a, b, c;
+	cin >> a >> b >> c;
+	cout << (a / c) * (b / c) << endl;              //кол-во размещенных квадратов
+	cout << a*b - (a / c) * (b / c)*c*c << endl;        //площадь ост места
+	return 0;
+}
+*/
+
+
+//laba 9.5
+
+/*
+int main()
+{
+	int x;
+	cin >> x;
+	cout << x / 100 + ((x % 100) && 1);            //определить столетие
+	return 0;
+}
+*/
+
