@@ -1,0 +1,141 @@
+
+//laba 10.1
+
+/*
+int main()
+{
+	int a, b;
+	cin >> a >> b;
+	bool p = (a > 2) && (b <= 3);       //исследование выражения на ложность
+	if (p == 0)
+	{
+		cout << "False" << endl;        
+	}
+	else
+	{
+		cout << "True" << endl;
+	}
+	return 0;
+}
+
+
+*/
+
+
+//laba 10.2
+
+/*
+int main()
+{
+	int a, b, c;
+	cin >> a >> b >> c;
+	if ((a < b)&&(b < c )== 1)         //исследование выражения на правду
+	{
+		cout << "True" << endl;
+	}
+	else
+	{
+		cout << "False" << endl;
+	}
+}
+
+*/
+
+
+//laba 10.3
+
+/*
+int main()
+{
+	int x;
+	cin >> x;
+	if ((x / 100 == 0) and (x / 10 != 0))           //если х - двузначное число
+	{
+		cout << "True" << endl;
+	}
+	else
+	{
+		cout << "False" << endl;
+	}
+}
+*/
+
+
+//laba 10.4
+
+/*
+int main()
+{
+	int x, a, b, c;
+	cin >> x;
+	a = x / 100;          // 1 цифра
+	c = x % 10;                   // 2 цифра
+	b = (x % 100) / 10;                  // 3 цифра
+
+	if ((a > b) and (b > c) or (a < b) and (b < c))             // если цифры в числе убывают или возрастают
+	{
+		cout << "True" << endl;
+	}
+	else
+	{
+		cout << "False" << endl;
+	}
+}
+*/
+
+//laba 10.5
+
+/*
+int main()
+{
+	int x;
+	cin >> x;
+	if ((x / 1000) == (x % 10) and ((x / 100) % 10) == (x / 10) % 10)             // если цифра1==цифра4 и цифра2==цифра3
+	{
+		cout << "True" << endl;
+	}
+	else
+	{
+		cout << "False" << endl;
+	}
+}
+*/
+
+//laba 10.6
+
+/*
+int main()
+{
+	int a, b, c, cc, aa;
+	cin >> a >> b >> c;
+	cc = max(max(a, b),max(b, c));           //максимальное число
+	aa = min(min(a, b), min(b, c));          //минимальное число
+	if (cc * cc == aa * aa + (a + b + c - aa - cc) * (a + b + c - aa - cc))    //если квадрат макс стороны равен сумме квадратов других сторон
+	{
+		cout << "True";
+	}
+	else
+	{
+		cout << "False";
+	}
+}
+*/
+
+//laba 10.7
+
+/*
+int main()
+{
+	int a, b, c;
+	cin >> a >> b >> c;
+	if (max(max(a, b), max(b, c)) < a + b + c - max(max(a, b), max(b, c)))          //если максимальная сторона меньше двух остальных сторон
+	{
+		cout << "true" << endl;
+	}
+	else
+	{
+		cout << "false" << endl;
+	}
+}
+*/
+
