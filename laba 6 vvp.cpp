@@ -22,6 +22,8 @@ a = b;              //замена содержимого переменных
 
 b = t;              //замена содержимого переменных
 
+cout<< "magic time" <<endl;
+
 cout << a << " " << b << endl;
 
 return 0;
@@ -57,6 +59,8 @@ b = a;
 a = c;
 
 c = t;
+
+cout<< "magic time" <<endl;
 
 cout << a << " " << b << " "<< c<< endl;
 
@@ -94,6 +98,8 @@ C = a;
 
 a = t;
 
+cout<< "magic time" <<endl;
+
 cout << C << " " << b << " "<< a<< endl;
 
 return 0;
@@ -124,7 +130,7 @@ int main()
 
 	int y = 3 * pow(x, 6) - 6 * pow(x, 2) - 7;          //подсчет функции у(х)
 
-	cout << y << endl;
+	cout <<"y ="<< y << endl;
 
 	return 0;
 
@@ -155,7 +161,7 @@ x -= 3;           //изначально задавалось уравнение
 
 int y = 4 * pow(x,6) - 7 * pow(x,2)+2;
 
-cout << y << endl;
+cout <<"y ="<< y << endl;
 
 return 0;
 
@@ -178,6 +184,8 @@ int main()
 {
 
 int x;
+
+cout<< "enter the number you want to raise to the 8th power"<<endl;
 
 cin >> x;
 
@@ -208,6 +216,8 @@ int main()
 {
 
 int x,t;
+
+cout<< "enter the number you want to raise to the 16th power"<<endl;
 
 cin >> x;
 
