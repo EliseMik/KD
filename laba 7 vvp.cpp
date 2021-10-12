@@ -6,9 +6,10 @@ using namespace std;
 int main()
 {
     float a, r;
+    cout<< "Enter degree"<<endl;
     cin >> a;
     r = a / 180;              //перевод в радианы
-    cout << r << "pi" << endl;
+    cout << a << " = " << r << "pi" << endl;
     return 0;
 }
 */
@@ -22,9 +23,10 @@ using namespace std;
 int main()
 {
     float a,r;
+    cout<< "Enter radian"<<endl;
     cin >> r;
     a = r * 180;            //перевод в градусы
-    cout << a << endl;
+    cout <<r<<"pi"<<" = "< a << endl;
     return 0;
 }
 */
@@ -38,12 +40,13 @@ using namespace std;
 int main()
 {
     float x, a, y, sum;
+    cout<<"enter weight of chocolates, its value and weigt of chocolates that you would like to buy<< endl;
     cin >> x >> a >> y;
     sum = a / x;             //стоимость килограмма конфет
     y = sum * y;             //стоимость у килограмма конфет
-    cout << sum << endl;
+    cout <<"value [ru/kg] = "<< sum << endl;
     cout << " " << endl;
-    cout << y << endl;
+    cout <<"value of chocolates that you would like to buy = "<< y << endl;
     return 0;
 }
 */
@@ -56,8 +59,9 @@ using namespace std;
 int main()
 {
     float v1, v2, S, t;
+    cout<<"enter the speed of the first and second car, the distance between them, the time they traveled"<<endl;
     cin >> v1 >> v2 >> S>> t;
-    cout << S + (v1 + v2) * t << endl;         //расстояние между машинами
+    cout <<"end distance" <<S + (v1 + v2) * t << endl;         //расстояние между машинами
     return 0;
 }
 */
