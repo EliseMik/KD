@@ -12,6 +12,8 @@ int main()
 
 int a, b;
 
+cout<< "enter 2 integer number" <<endl;
+
 cin >> a >> b;
 
 int t = a;           //замена содержимого переменных
@@ -43,6 +45,8 @@ int main()
 {
 
 int a, b, c;
+
+cout<< "enter 3 integer number" <<endl;
 
 cin >> a >> b>> c;
 
@@ -78,6 +82,8 @@ int main()
 
 int C, b, a;
 
+cout<< "enter 3 integer number" <<endl;
+
 cin >> C >> b>> a;
 
 int t = b;            // алгоритм замены содержимых переменных между собой
@@ -112,6 +118,8 @@ int main()
 
 	int x;
 
+        cout<< "enter x to get y = 3 * x^6 - 6 * x^2 - 7 " <<endl;
+
 	cin >> x;
 
 	int y = 3 * pow(x, 6) - 6 * pow(x, 2) - 7;          //подсчет функции у(х)
@@ -138,6 +146,8 @@ int main()
 {
 
 int x;
+
+cout<< "enter x to get y = 4 * (x-3)^6 - 7 * (x-3)^2 +2" <<endl; 
 
 cin >> x;
 
