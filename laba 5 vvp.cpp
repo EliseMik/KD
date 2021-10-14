@@ -48,7 +48,7 @@ int main()
 
 float a, b, c;
 
-cout<< "Enter the coordinates of 3 points (а, b, c) on the number line OX" ;
+cout<< "Enter the coordinates of 3 points (а, b, c) on the number line OX ((a<c<b) or (a>c>b))" ;
 
 cin >> a >> b >> c;          //точки на одной прямой
 
@@ -90,7 +90,7 @@ cout<< "Enter the coordinates of 3 points (а, b, c) on the number line OX"<<end
 
 cin >> a >> b >> c;
 
-cout << "Multiplication of distance between (a and c) + (c and b) is "<< abs(a - c) * abs(b - c) << endl;       //произведение расстояний
+cout << "Multiplication of distance between (a and c) and (c and b) is "<< abs(a - c) * abs(b - c) << endl;       //произведение расстояний
 
 return 0;
 
