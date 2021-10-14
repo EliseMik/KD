@@ -26,8 +26,9 @@ using namespace std;
 int main()
 {
 	int a, b;
+	cout<< "enter numbers a, b (a>b)<<endl;
 	cin >> a >> b;
-	cout << a / b << endl;      // кол-во целых отрезков б в а
+	cout << "b in a: " << a / b << endl;      // кол-во целых отрезков б в а
 	return 0;
 }
 */
@@ -41,8 +42,9 @@ using namespace std;
 int main()
 {
 	int a, b;
+	cout<< "enter numbers a, b (a>b)<<endl;
 	cin >> a >> b;
-	cout << a%b << endl;        //незанятая часть а, занятая отрезками б
+	cout << "unoccupied part a, consisting of b: " << a%b << endl;        //незанятая часть а, занятая отрезками б
 	return 0;
 }
 */
@@ -56,6 +58,7 @@ using namespace std;
 int main()
 {
 	int a;
+	cout<< "enter two-digit number "<<endl;
 	cin >> a;
 	cout << a % 10 << a / 10 << endl;       //поменяли цифры местами
 	return 0;
@@ -72,6 +75,7 @@ using namespace std;
 int main()
 {
 	int a;
+	cout<< "enter three-digit number "<<endl;
 	cin >> a;
 	cout << a % 100 << a / 100 << endl;      //зачеркнули цифру слева, приписали справа
 	return 0;
