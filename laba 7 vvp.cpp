@@ -40,7 +40,7 @@ using namespace std;
 int main()
 {
     float x, a, y, sum;
-    cout<<"enter weight of chocolates, its value and weigt of chocolates that you would like to buy<< endl;
+    cout<<"enter weight of chocolates, its value and weigt of chocolates that you would like to buy" << endl;
     cin >> x >> a >> y;
     sum = a / x;             //стоимость килограмма конфет
     y = sum * y;             //стоимость у килограмма конфет
