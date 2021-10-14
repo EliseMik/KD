@@ -12,6 +12,10 @@ int main()
         cout<< "enter Number of bytes to count kilobytes" <<endl;
 	cin >> x;
 	a = x / 1024;              //перевод байтов в килобайты
+        if (x%1024!=0)
+        {
+         a+=1;
+        } 
 	cout <<x<<"b = " <<a <<"Kb" <<endl;
 	return 0;
 }
@@ -77,7 +81,7 @@ int main()
 	int a;
 	cout<< "enter three-digit number "<<endl;
 	cin >> a;
-	cout << a % 100 << a / 100 << endl;      //зачеркнули цифру слева, приписали справа
+	cout << a % 100 << (a/10)%10 << a / 100 << endl;      //зачеркнули цифру слева, приписали справа
 	return 0;
 }
 */
