@@ -9,9 +9,10 @@ int main()
 {
 	float x;
 	int a;
+        cout<< "enter Number of bytes to count kilobytes" <<endl;
 	cin >> x;
 	a = x / 1024;              //перевод байтов в килобайты
-	cout << a << endl;
+	cout <<x<<"b = " <<a <<"Kb" <<endl;
 	return 0;
 }
 */
