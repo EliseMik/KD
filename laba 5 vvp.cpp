@@ -2,6 +2,7 @@
 
 /*
 #include<iostream>
+#include<cmath>
 
 #include<cstdlib>
 
@@ -33,6 +34,7 @@ return 0;
 
 /*
 #include<iostream>
+#include<cmath>
 
 #include<cstdlib>
 
@@ -70,6 +72,7 @@ return 0;
 
 /*
 #include<iostream>
+#include<cmath>
 
 #include<cstdlib>
 
