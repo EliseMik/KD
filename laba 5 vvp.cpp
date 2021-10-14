@@ -20,7 +20,7 @@ float x1, y1, x2, y2;
 
 cin >> x1 >> y1 >> x2 >> y2;
 
-cout << "the distance between these points is" ;
+cout << "the distance between these points is " ;
 
 cout << sqrt((x1 - x2)*(x1 - x2) + (y1 - y2)*(y1 - y2)) << endl;   //вычисление расстояния между заданными точками
 
