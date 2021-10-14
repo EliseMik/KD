@@ -156,7 +156,7 @@ int main()
 
 float x1, x2, x3, y1, y2, y3, a, b, c, p;
 
-cout<<"Enter the coordinates of the points (х1, у1), (х2, у2), (x3, y3) of triangle<<endl;
+cout<<"Enter the coordinates of the points (х1, у1), (х2, у2), (x3, y3) of triangle"<<endl;
 
 cin >> x1 >> y1 >> x2 >> y2 >> x3 >> y3;
 
