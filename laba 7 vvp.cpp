@@ -75,8 +75,10 @@ using namespace std;
 int main()
 {
     float a, b;
+    cout<<"Equation of the form Ax +B = 0, type A, B to find X" <<endl;
+
     cin >> a >> b;
-    cout << -b / a << endl;        // решение уравнения вида  ах + в = 0
+    cout << "Answer = " << -b / a << endl;        // решение уравнения вида  ах + в = 0
     return 0;
 }
 */
@@ -90,6 +92,13 @@ using namespace std;
 int main()
 {
     float a1, b1, c1, a2, b2, c2,x,y;
+
+    cout<< "Equation: "<<endl;
+    cout<< "A1*X + B1*Y = C1" <<endl;
+    cout<< "and" <<endl;
+    cout<< "A2*X + B2*Y = C2" <<endl;
+    cout<< "Enter: a1 >> b1 >> c1 >> a2 >> b2 >> c2 to Find X, Y" <<endl;
+
     cin >> a1 >> b1 >> c1 >> a2 >> b2 >> c2;
     if ((a1 * b2 - b1 * a2) == 0)                //главный определитель = 0
     {
@@ -104,8 +113,8 @@ int main()
     }
     else
     {
-        cout << -(b1 * c2 - c1 * b2) / (a1 * b2 - b1 * a2) << endl;         // подсчет х
-        cout << (a1 * c2 - c1 * a2) / (a1 * b2 - b1 * a2) << endl;           // подсчет у
+        cout << "X = " << -(b1 * c2 - c1 * b2) / (a1 * b2 - b1 * a2) << endl;         // подсчет х
+        cout << "Y = " << (a1 * c2 - c1 * a2) / (a1 * b2 - b1 * a2) << endl;           // подсчет у
     }
     return 0;
 }
