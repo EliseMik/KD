@@ -9,8 +9,9 @@ using namespace std;
 int main()
 {
 	int n;
+	cout<< "Enter the number of seconds"<<endl;
 	cin >> n;
-	cout << n % 60 << endl;        //кол-во секунд, прошедших с последней минуты
+	cout << n % 60 << " seconds have passed since the last minute"<< endl;        //кол-во секунд, прошедших с последней минуты
 	return 0;
 }
 */
@@ -22,8 +23,9 @@ int main()
 int main()
 {
 	int k;
+	cout<< "Enter number of day"<<endl;
 	cin >> k;                 //ввод номера дня
-	cout << k % 7 << endl;      //вычисление номера дня недели
+	cout << k % 7 <<", this is the number of day of the week of the entered day "<< endl;      //вычисление номера дня недели
 	return 0;
 }
 */
@@ -37,8 +39,9 @@ int main()
 int main()
 {
 	int k, n;
+	cout<< "Enter the number of the week when it was January 1 and the number of the day" <<endl;
 	cin >> n>> k;                    //ввод номера недели(1 янв) и день
-	cout << (k+n-1)%7 << endl;           //вывод номера недели введенного дня
+	cout << (k+n-1)%7 <<", this is the number of day of the week of the entered day "<< endl;           //вывод номера недели введенного дня
 	return 0;
 }
 */
@@ -51,9 +54,10 @@ int main()
 int main()
 {
 	int a, b, c;
+	cout<<" Enter sides of the rectangle and side of the squre "<<endl;
 	cin >> a >> b >> c;
 	cout << (a / c) * (b / c) << endl;              //кол-во размещенных квадратов
-	cout << a*b - (a / c) * (b / c)*c*c << endl;        //площадь ост места
+	cout << "S (empty space) = " << a*b - (a / c) * (b / c)*c*c << endl;        //площадь ост места
 	return 0;
 }
 */
@@ -65,8 +69,9 @@ int main()
 int main()
 {
 	int x;
+	cout<< "Enter the year" <<endl;
 	cin >> x;
-	cout << x / 100 + ((x % 100) && 1);            //определить столетие
+	cout << "the centure is " << x / 100 + ((x % 100) && 1);            //определить столетие
 	return 0;
 }
 */
