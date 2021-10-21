@@ -38,10 +38,15 @@ int main()
 
 int main()
 {
-	int k, n;
+	int k, n, l;
 	cout<< "Enter the number of the week when it was January 1 and the number of the day" <<endl;
 	cin >> n>> k;                    //ввод номера недели(1 янв) и день
-	cout << (k+n-1)%7 <<", this is the number of day of the week of the entered day "<< endl;           //вывод номера недели введенного дня
+	l =(k+n-1)%7;
+	if (l==0)
+	{
+	    l=7;
+	}
+	cout << l <<", this is the number of day of the week of the entered day "<< endl;           //вывод номера недели введенного дня
 	return 0;
 }
 */
