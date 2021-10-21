@@ -1,0 +1,160 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+
+//laba 11.1
+
+/*
+int main()
+{
+	int a, b;
+	cin >> a >> b;
+	if (a == b)
+	{
+		a = 0;
+		b = 0;
+	}
+	else
+	{
+		a = max(a, b);
+		b = max(a, b);
+	}
+	cout << a << " " << b;
+	return 0;
+}
+*/
+
+//laba 11.2
+
+/*
+int main()
+{
+	int a, b, c;
+	cin >> a >> b >> c;
+	cout << a + b + c - min(min(a, b), min(b, c));
+}
+*/
+
+//laba 11.3
+
+/*
+int main()
+{
+	float a1, a2, b1, b2, c1, c2, ac, ab;
+	cin >> a1 >> a2 >> b1 >> b2 >> c1 >> c2;
+	ab = sqrt((a1 - b1) * (a1 - b1) + (a2 - b2) * (a2 - b2));
+	ac = sqrt((a1 - c1) * (a1 - c1) + (a2 - c2) * (a2 - c2));
+	if (ab < ac)
+	{
+		cout << "b" << " " << ab;
+	}
+	else
+	{
+		cout << "c" << " " << ac;
+	}
+}
+*/
+
+//laba 11.4
+
+/*
+int main()
+{
+	int x, y;
+	cin >> x >> y;
+	if (x > 0)
+	{
+		if (y > 0)
+		{
+			cout << "1" << endl;
+		}
+		else
+		{
+			cout << "4" << endl;
+		}
+	}
+	else
+	{
+		if (y > 0)
+		{
+			cout << "2" << endl;
+		}
+		else
+		{
+			cout << "3" << endl;
+		}
+	}
+}
+*/
+
+
+//laba 11.5
+
+/*
+int main()
+{
+	int x;
+	cin >> x;
+	if (x == 0)
+	{
+		cout << "zero ";
+	}
+	else
+	{
+		if (x > 0)
+		{
+			cout << "positive ";
+		}
+		else
+		{
+			cout << "negative ";
+		}
+		if (x % 2 == 0)
+		{
+			cout << "even ";
+		}
+		else
+		{
+			cout << "odd ";
+		}
+	}
+	cout << "number" << endl;
+	return 0;
+
+}
+*/
+
+//laba 11.6
+
+/*
+int main()
+{
+	int x;
+	cin >> x;
+	if (x % 2 == 0)
+	{
+		cout << "even ";
+	}
+	else
+	{
+		cout << "odd ";
+	}
+	if (x / 100 != 0)
+	{
+		cout << "three-digit ";
+	}
+	else
+	{
+		if (x / 10 != 0)
+		{
+			cout << "two-digit ";
+		}
+		else
+		{
+			cout << "one-figure ";
+		}
+	}
+	cout << "number";
+}
+*/
