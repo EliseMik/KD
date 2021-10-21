@@ -1,3 +1,7 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+
 
 //laba 10.1
 
@@ -5,6 +9,7 @@
 int main()
 {
 	int a, b;
+	cout<< "Enter 2 integers to check if the inequalities A > 2 and B <= 3 are valid"<<endl;
 	cin >> a >> b;
 	bool p = (a > 2) && (b <= 3);       //исследование выражения на ложность
 	if (p == 0)
@@ -28,6 +33,7 @@ int main()
 int main()
 {
 	int a, b, c;
+	cout<< "Enter 3 integers (a,b,c) to check if the inequalities (A < B < C) are valid"<<endl;
 	cin >> a >> b >> c;
 	if ((a < b)&&(b < c )== 1)         //исследование выражения на правду
 	{
@@ -48,10 +54,13 @@ int main()
 int main()
 {
 	int x;
+	cout<< "Enter a positive integer to verify the truth of the statement: "This number is an even two-digit"" <<endl;
 	cin >> x;
-	if ((x / 100 == 0) and (x / 10 != 0))           //если х - двузначное число
+	if ((x / 100 == 0) and (x / 10 != 0) and (x%2==0))      //если х - четное двузначное число
 	{
-		cout << "True" << endl;
+	
+	cout << "True" << endl;
+		
 	}
 	else
 	{
@@ -67,10 +76,11 @@ int main()
 int main()
 {
 	int x, a, b, c;
+	cout<< "Enter a three-digit number to verify the truth of the statement: "The digits of this number form an increasing or decreasing sequence.""<<endl;
 	cin >> x;
 	a = x / 100;          // 1 цифра
-	c = x % 10;                   // 2 цифра
-	b = (x % 100) / 10;                  // 3 цифра
+	c = x % 10;                   // 3 цифра
+	b = (x % 100) / 10;                  // 2 цифра
 
 	if ((a > b) and (b > c) or (a < b) and (b < c))             // если цифры в числе убывают или возрастают
 	{
@@ -89,6 +99,7 @@ int main()
 int main()
 {
 	int x;
+	cout<< "enter a four-digit number to verify the truth of the statement: "This number reads the same from left to right and from right to left."" <<endl;
 	cin >> x;
 	if ((x / 1000) == (x % 10) and ((x / 100) % 10) == (x / 10) % 10)             // если цифра1==цифра4 и цифра2==цифра3
 	{
@@ -107,6 +118,7 @@ int main()
 int main()
 {
 	int a, b, c, cc, aa;
+	cout<< "Enter the integers a, b, c that are the sides of some triangle to check the truth of the statement: "A triangle with sides a, b, c is rectangular.""<<endl;
 	cin >> a >> b >> c;
 	cc = max(max(a, b),max(b, c));           //максимальное число
 	aa = min(min(a, b), min(b, c));          //минимальное число
@@ -127,6 +139,7 @@ int main()
 int main()
 {
 	int a, b, c;
+	cout<< "Enter integers a, b, c to verify the truth of the statement: "There is a triangle with sides a, b, c"." <<endl;
 	cin >> a >> b >> c;
 	if (max(max(a, b), max(b, c)) < a + b + c - max(max(a, b), max(b, c)))          //если максимальная сторона меньше двух остальных сторон
 	{
