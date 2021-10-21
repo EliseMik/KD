@@ -9,6 +9,7 @@ using namespace std;
 int main()
 {
 	int a, b;
+	cout<< "Enter two integer type variables: A and B." <<endl;
 	cin >> a >> b;
 	if (a == b)
 	{
@@ -20,7 +21,8 @@ int main()
 		a = max(a, b);
 		b = max(a, b);
 	}
-	cout << a << " " << b;
+	cout<< "new values"<<endl;
+	cout << "a =" << a << "b = " << b;
 	return 0;
 }
 */
@@ -31,8 +33,9 @@ int main()
 int main()
 {
 	int a, b, c;
+	cout<< "Enter 3 integer type variables." <<endl;
 	cin >> a >> b >> c;
-	cout << a + b + c - min(min(a, b), min(b, c));
+	cout << "the sum of two large numbers is " << a + b + c - min(min(a, b), min(b, c));
 }
 */
 
@@ -42,16 +45,18 @@ int main()
 int main()
 {
 	float a1, a2, b1, b2, c1, c2, ac, ab;
+	
+	cout<< "enter three coordinates of type (x, y): A, B, C." <<endl;
 	cin >> a1 >> a2 >> b1 >> b2 >> c1 >> c2;
 	ab = sqrt((a1 - b1) * (a1 - b1) + (a2 - b2) * (a2 - b2));
 	ac = sqrt((a1 - c1) * (a1 - c1) + (a2 - c2) * (a2 - c2));
 	if (ab < ac)
 	{
-		cout << "b" << " " << ab;
+		cout <<" the point "B" is closer to the point A :" << "b" << " " << ab;
 	}
 	else
 	{
-		cout << "c" << " " << ac;
+		cout <<" the point "C" is closer to the point A :" << "c" << " " << ac;
 	}
 }
 */
@@ -62,7 +67,9 @@ int main()
 int main()
 {
 	int x, y;
+	cout<< "enter the point coordinate" <<endl;
 	cin >> x >> y;
+	cout<< "the point is in the quarter: ";
 	if (x > 0)
 	{
 		if (y > 0)
@@ -95,6 +102,7 @@ int main()
 int main()
 {
 	int x;
+	cout<< "enter integer number"<<endl;
 	cin >> x;
 	if (x == 0)
 	{
