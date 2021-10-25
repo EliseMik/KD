@@ -139,6 +139,7 @@ int main()
 int main()
 {
 	int x;
+	cout<< "enter the number 1-999"<<endl;
 	cin >> x;
 	if (x % 2 == 0)
 	{
