@@ -94,3 +94,168 @@ int main()
 }
 */
 
+//laba 12.2
+/*
+int main()
+{
+	int s, a, b, c;
+	cin >> a >> b >> c;
+	s = a + b + c;
+	s = (s+4) % 4;
+	if (s==0)
+	{
+		cout << "N" << endl;
+	}
+	if (s == 1)
+	{
+		cout << "W" << endl;
+	}
+	if (s == 2)
+	{
+		cout << "S" << endl;
+	}
+	if (s == 3)
+	{
+		cout << "E" << endl;
+	}
+	return 0;
+}
+*/
+
+//laba 12.3
+
+/*
+string digit(int c)
+{
+	if (c == 1)
+	{
+		return "First ";
+	}
+	if (c == 2)
+	{
+		return  "Second ";
+	}
+	if (c == 3)
+	{
+		return  "Third ";
+	}
+	if (c == 4)
+	{
+		return  "Fourth ";
+	}
+	if (c == 5)
+	{
+		return  "Fifth ";
+	}
+	if (c == 6)
+	{
+		return  "Sixth ";
+	}
+	if (c == 7)
+	{
+		return  "Seventh ";
+	}
+	if (c == 8)
+	{
+		return  "Eighth ";
+	}
+	if (c == 9)
+	{
+		return  "Ninth ";
+	}
+}
+string numb(int a, int b)
+{
+	if (a == 1)
+	{
+		if (b == 0)
+		{
+			return  "The Tenth  ";
+		}
+		if (b == 1)
+		{
+			return  "The Eleventh  ";
+		}
+		if (b == 2)
+		{
+			return  "The Twelfth  ";
+		}
+		if (b == 3)
+		{
+			return  "The Thirteenth  ";
+		}
+		if (b == 4)
+		{
+			return  "The Fourteenth  ";
+		}
+		if (b == 5)
+		{
+			return  "The Fifteenth  ";
+		}
+		if (b == 6)
+		{
+			return  "The Sixteenth  ";
+		}
+		if (b == 7)
+		{
+			return  "The Seventeenth  ";
+		}
+		if (b == 8)
+		{
+			return  "The Eighteenth  ";
+		}
+		if (b == 9)
+		{
+			return  "The Nineteenth  ";
+		}
+	}
+	if (a == 2)
+	{
+		if (b == 0)
+		{
+			return  "The Twentieth  ";
+		}
+		else
+		{
+			return  "The twenty-";
+			digit(b);
+		}
+	}
+	if (a == 3)
+	{
+		if (b == 0)
+		{
+			return  "The Thirtieth  ";
+		}
+		else
+		{
+			return  "The Thirty-";
+			digit(b);
+		}
+	}
+	if (a == 4)
+	{
+		if (b == 0)
+		{
+			return  "The Fortieth  ";
+		}
+		else
+		{
+			return  "The Forty-";
+			digit(b);
+		}
+	}
+}
+int main()
+{
+	int a, b;
+	cin >> a;
+	b = a % 10;
+	a /= 10;
+	cout<< numb(a, b);
+	cout << " of education publications" << endl;
+	return 0;
+}
+*/
+
+
