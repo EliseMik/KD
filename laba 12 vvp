@@ -86,6 +86,7 @@ int main()
 {
 	int x, n;
 	cin >> x >> n;
+	cout<< "The ";
 	cout << x;
 	cout<< day(x);
 	cout << "of ";
@@ -252,10 +253,228 @@ int main()
 	cin >> a;
 	b = a % 10;
 	a /= 10;
-	cout<< numb(a, b);
+	cout<< numb(a, b)<<digit(b);
 	cout << " of education publications" << endl;
 	return 0;
 }
 */
+
+
+//laba 12.4
+
+string digit(int c)
+{
+	if (c == 0)
+	{
+		return "";
+	}
+	if (c == 1)
+	{
+		return "one ";
+	}
+	if (c == 2)
+	{
+		return  "two ";
+	}
+	if (c == 3)
+	{
+		return  "three ";
+	}
+	if (c == 4)
+	{
+		return  "four ";
+	}
+	if (c == 5)
+	{
+		return  "five ";
+	}
+	if (c == 6)
+	{
+		return  "six ";
+	}
+	if (c == 7)
+	{
+		return  "seven ";
+	}
+	if (c == 8)
+	{
+		return  "eight ";
+	}
+	if (c == 9)
+	{
+		return  "nine ";
+	}
+}
+
+string numb(int a, int b)
+{
+	if (a == 0)
+	{
+		return "";
+	}
+	if (a == 1)
+	{
+		if (b == 0)
+		{
+			return  "ten  ";
+		}
+		if (b == 1)
+		{
+			return  "eleven  ";
+		}
+		if (b == 2)
+		{
+			return  "twelve  ";
+		}
+		if (b == 3)
+		{
+			return  "thirteen  ";
+		}
+		if (b == 4)
+		{
+			return  "fourteen  ";
+		}
+		if (b == 5)
+		{
+			return  "fifteen  ";
+		}
+		if (b == 6)
+		{
+			return  "sixteen  ";
+		}
+		if (b == 7)
+		{
+			return  "seventeen  ";
+		}
+		if (b == 8)
+		{
+			return  "eighteen  ";
+		}
+		if (b == 9)
+		{
+			return  "nineteen  ";
+		}
+	}
+	if (a == 2)
+	{
+		if (b == 0)
+		{
+			return  "twenty  ";
+		}
+		else
+		{
+			return  "twenty-";
+			digit(b);
+		}
+	}
+	if (a == 3)
+	{
+		if (b == 0)
+		{
+			return  "thirty  ";
+		}
+		else
+		{
+			return  "thirty-";
+			digit(b);
+		}
+	}
+	if (a == 4)
+	{
+		if (b == 0)
+		{
+			return  "forty  ";
+		}
+		else
+		{
+			return  "forty-";
+			digit(b);
+		}
+	}
+	if (a == 5)
+	{
+		if (b == 0)
+		{
+			return "fifty  ";
+		}
+		else
+		{
+			return "fifty-  ";
+		}
+	}
+	if (a == 6)
+	{
+		if (b == 0)
+		{
+			return "sixty  ";
+		}
+		else
+		{
+			return "sixty-  ";
+		}
+	}
+	if (a == 7)
+	{
+		if (b == 0)
+		{
+			return "seventy  ";
+		}
+		else
+		{
+			return "seventy-  ";
+		}
+	}
+	if (a == 8)
+	{
+		if (b == 0)
+		{
+			return "eighty  ";
+		}
+		else
+		{
+			return "eighty-  ";
+		}
+	}
+	if (a == 9)
+	{
+		if (b == 0)
+		{
+			return "ninety  ";
+		}
+		else
+		{
+			return "ninety-  ";
+		}
+	}
+
+}
+
+string Q(int c, int a, int b)
+{
+	if ((a != 0) or (b != 0))
+	{
+		return "hundred and ";
+	}
+	else
+	{
+		return "hundred";
+	}
+}
+
+int main()
+{
+	int x, a,b,c;
+	cout << "enter three-digit" << endl;
+	cin >> x;
+	b = x % 10;
+	a = (x / 10) % 10;
+	c = x / 100;
+	cout << digit(c) << Q(c,a,b) << numb(a,b)<< digit(b) << endl;
+	return 0;
+
+}
+
+
+
 
 
