@@ -6,7 +6,7 @@ using namespace std;
 //laba 12.1
 
 /*
-string day(int a)
+string day(int a)                       //создание функции добавления окончания к числу даты
 {
 
 	if ((a == 1) or (a==2) or (a==3))
@@ -30,7 +30,7 @@ string day(int a)
 	}
 }
 
-string month(int a)
+string month(int a)             //функия перевода заданного числа в месяц
 {
 	if (a == 1)
 	{
@@ -85,6 +85,7 @@ string month(int a)
 int main()
 {
 	int x, n;
+	cout<<"enter the number of the day and the number of the month"<<endl;
 	cin >> x >> n;
 	cout<< "The ";
 	cout << x;
@@ -99,10 +100,21 @@ int main()
 /*
 int main()
 {
-	int s, a, b, c;
-	cin >> a >> b >> c;
-	s = a + b + c;
-	s = (s+4) % 4;
+	int s, i, x,n;
+	cout<< "The robot can move in four directions ("N" - north, "W" - west, "S" - south, "E" - east)"<<endl;
+	cout<< "and receive three digital commands: 0 - continue moving, 1 - turn left, -1 - turn right."<<endl;
+	cout<< "The symbol N (north) is given — the initial direction of the robot."<<endl;
+	cout<<"Enter an integer number of commands and enter them."<<endl;
+	cin >> n;
+	s = 0;
+	for (i = 0; i<n; i++)
+	{
+		cin >> x;
+		s += x;
+	}
+	
+	s = ((s % 4)+4)%4;
+	cout<<"the direction of the robot after the executed commands is  ";
 	if (s==0)
 	{
 		cout << "N" << endl;
@@ -126,7 +138,7 @@ int main()
 //laba 12.3
 
 /*
-string digit(int c)
+string digit(int c)            //
 {
 	if (c == 1)
 	{
@@ -165,7 +177,7 @@ string digit(int c)
 		return  "Ninth ";
 	}
 }
-string numb(int a, int b)
+string numb(int a, int b)                 //
 {
 	if (a == 1)
 	{
