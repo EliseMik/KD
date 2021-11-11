@@ -110,7 +110,7 @@ int main()
 	}
 	else
 	{
-		if (x > 0)
+		if (x > 0)                           //если число больше 0
 		{
 			cout << "positive ";
 		}
@@ -118,7 +118,7 @@ int main()
 		{
 			cout << "negative ";
 		}
-		if (x % 2 == 0)
+		if (x % 2 == 0)                      //если число четное
 		{
 			cout << "even ";
 		}
@@ -141,7 +141,7 @@ int main()
 	int x;
 	cout<< "enter the number 1-999"<<endl;
 	cin >> x;
-	if (x % 2 == 0)
+	if (x % 2 == 0)                           //если число четное
 	{
 		cout << "even ";
 	}
@@ -149,13 +149,13 @@ int main()
 	{
 		cout << "odd ";
 	}
-	if (x / 100 != 0)
+	if (x / 100 != 0)                          //если число при делении на сто больше нуля
 	{
 		cout << "three-digit ";
 	}
 	else
 	{
-		if (x / 10 != 0)
+		if (x / 10 != 0)                 //если число при делении на десять больше нуля
 		{
 			cout << "two-digit ";
 		}
