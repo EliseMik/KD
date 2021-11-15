@@ -82,7 +82,6 @@ int main()
 		x *= a;
 		s += x;
 		s -= 2 * x * b;
-		cout<<b<< " " << x<<" "<<s << endl;
 	}
 	cout << s << endl;
 }
