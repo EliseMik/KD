@@ -52,11 +52,11 @@ int main()
 	ac = sqrt((a1 - c1) * (a1 - c1) + (a2 - c2) * (a2 - c2));
 	if (ab < ac)
 	{
-		cout <<" the point "B" is closer to the point A :" << "b" << " " << ab;
+		cout <<" the point B is closer to the point A :" << "b" << " " << ab;
 	}
 	else
 	{
-		cout <<" the point "C" is closer to the point A :" << "c" << " " << ac;
+		cout <<" the point C is closer to the point A :" << "c" << " " << ac;
 	}
 }
 */
