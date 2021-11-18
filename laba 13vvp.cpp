@@ -6,10 +6,11 @@ using namespace std;
 int main()
 {
 	float a, i;
+	cout<<"enter the price of 1 kg of candy"<<endl;
 	cin >> a;
 	for (i = 1; i < 11; i++)
 	{
-		cout << i * 0.1 * a << endl;
+		cout << "for " << 0.1*i<< " kg of sweets you will pay " << i * 0.1 * a << endl;
 	}
 }
 */
@@ -20,6 +21,7 @@ int main()
 int main()
 {
 	float n, i,s;
+	cout<< "enter an integer to find out the product of the multipliers (1.1 * 1.2 * 1.3 * . . . N)"<<endl;
 	cin >> n;
 	s = 1;
 	for (i = 1; i < (n-1)*10+1; i++)
@@ -36,6 +38,7 @@ int main()
 int main()
 {
 	float n, i, s;
+	cout<<"enter a number to find the square of the given number"<<endl;
 	cin >> n;
 	s = 0;
 	for (i = 1; i < 2*n; i+=2)
@@ -53,6 +56,7 @@ int main()
 {
 	int i,n;
 	float a,x,s;
+	cout<<"enter a real number A and an integer N (> 0) to find the sum of 1 + A + A2 + A3 + . . . + AN"<<endl;
 	cin >> a>>n;
 	s = 1;
 	x = 1;
@@ -72,6 +76,7 @@ int main()
 {
 	int i, n;
 	float a, x, s,b;
+	cout<<"enter a real number A and an integer N (> 0) to find the sum of 1 - A + A2 - A3 + . . . +- AN"<<endl;
 	cin >> a >> n;
 	s = 1;
 	x = 1;
