@@ -44,9 +44,8 @@ int main()
 	for (i = 1; i < 2*n; i+=2)
 	{
 		s +=i;
-		cout << s << endl;
 	}
-	
+	cout << s << endl;
 }
 */
 
@@ -86,7 +85,7 @@ int main()
 		b = ((i+1) % 2);  //чет = 1, нечет = 0
 		x *= a;
 		s += x;
-		s -= 2 * x * b;
+		s -= 2 * x * b;  //вычитаем нечетные степени
 	}
 	cout << s << endl;
 }
