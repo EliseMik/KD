@@ -11,12 +11,12 @@ int main()
 	int a, b;
 	cout<< "Enter two integer type variables: A and B." <<endl;
 	cin >> a >> b;
-	if (a == b)
+	if (a == b)               //если числа равны друг другу
 	{
 		a = 0;
 		b = 0;
 	}
-	else
+	else                       //иначе
 	{
 		a = max(a, b);
 		b = max(a, b);
@@ -35,7 +35,7 @@ int main()
 	int a, b, c;
 	cout<< "Enter 3 integer type variables." <<endl;
 	cin >> a >> b >> c;
-	cout << "the sum of two large numbers is " << a + b + c - min(min(a, b), min(b, c));
+	cout << "the sum of two large numbers is " << a + b + c - min(min(a, b), min(b, c));     //отнять минимальный из суммы всех чисел
 }
 */
 
@@ -48,7 +48,7 @@ int main()
 	
 	cout<< "enter three coordinates of type (x, y): A, B, C." <<endl;
 	cin >> a1 >> a2 >> b1 >> b2 >> c1 >> c2;
-	ab = sqrt((a1 - b1) * (a1 - b1) + (a2 - b2) * (a2 - b2));
+	ab = sqrt((a1 - b1) * (a1 - b1) + (a2 - b2) * (a2 - b2));                 //вычисление длины
 	ac = sqrt((a1 - c1) * (a1 - c1) + (a2 - c2) * (a2 - c2));
 	if (ab < ac)
 	{
