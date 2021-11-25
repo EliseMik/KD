@@ -7,6 +7,7 @@ using namespace std;
 int main()
 {
 	int a, b, i, j, x;
+	cout<<"Enter positive integers A and B (A < B) to output all integers from A to B inclusive"<<endl;
 	cin >> a >> b;
 	x = a;
 	j = 0;
@@ -45,12 +46,13 @@ int main()
 int main()
 {
 	int a, b;
+	cout<<"Enter the positive numbers A and B (A > B). On a segment of length A, the maximum possible number of segments of length B is placed (without overlaps)."<<endl;
 	cin >> a >> b;
 	while (a+1>b)
 	{
 		a -= b;
 	}
-	cout << a << endl;
+	cout << "the length of the unoccupied part of the segment A is  " << a << endl;
 }
 */
 
@@ -60,6 +62,8 @@ int main()
 int main()
 {
 	int n, i, k;
+	cout<<"enter the number N (> 1) to output the smallest of the integers K for which the sum is (1 + 2 + . . . + K)"<<endl;
+	cout<<" will be greater than or equal to N, and this sum itself."<<endl;
 	cin >> n;
 	k = 0;
 	for (i = 1; k < n; i++)
@@ -76,11 +80,13 @@ int main()
 int main()
 {
 	float p, s, i;
+	cout<< "The initial deposit in the bank is 1000 rubles. After each month, the deposit amount increases by P percent of the available amount (P is a real number, 0 < P < 25). " <<endl;
+	cout<< "Enter P to determine how many months the deposit amount will exceed 1100 rubles. "<<endl;
 	cin >> p;
 	s = 1000;
 	p = 1 + (p * 0.01);
 	i = 0;
-	while (s < 1100)
+	while (s-1 < 1100)
 	{
 		s *= p;
 		i++;
