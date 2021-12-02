@@ -1,12 +1,13 @@
-﻿#include <iosteream>
+#include <iostream>
 using namespace std;
 
 //laba 15.1
 
 /*
+
 float PowerA3(float A)
 {
-	float B = A * A * A;
+	float B = A * A * A;  //возвести в 3-ю степень
 	return B;
 }
 
@@ -14,6 +15,7 @@ int main()
 {
 	int i;
 	float a;
+	cout<<"enter 5 numbers to find their third powers"<<endl;
 	for (i = 0; i < 5; i++)
 	{
 		cin >> a;
@@ -28,7 +30,8 @@ int main()
 //laba 15.2
 
 /*
-float Sign(float x)
+
+float Sign(float x)   // −1, если X < 0; 0, если X = 0; 1, если X > 0
 {
 	if (x < 0)
 	{
@@ -42,13 +45,15 @@ float Sign(float x)
 	{
 		return 1;
 	}
+	return 0;
 }
 
 int main()
 {
 	float a, b;
+	cout<<"Enter A and B"<<endl;
 	cin >> a >> b;
-	cout << Sign(a) + Sign(b) << endl;
+	cout <<"Sign(A) + Sign(B) = "<< Sign(a) + Sign(b) << endl;
 	return 0;
 }
 
@@ -57,14 +62,15 @@ int main()
 //laba 15.3
 
 /*
-float RingS(float r1, float r2)
+float RingS(float r1, float r2)          //функция подсчета площади кольца
 {
-	return 3, 14 * (r1 - r2)(r1 + r2);
+	return 3.14 * (r1 - r2)*(r1 + r2);
 }
 
 int main()
 {
 	float i, r1, r2;
+	cout<<"Enter 3 pairs of numbers R1 and R2 - outer and inner radii (real, R1 > R2) to find the areas of the three rings"<<endl;
 	for (i = 0; i < 3; i++)
 	{
 		cin >> r1 >> r2;
@@ -77,28 +83,29 @@ int main()
 //laba 15.4 
 
 /*
-int Quater(float x,float y)
+
+int Quater(float x,float y)    //функция определения четверти координаты
 {
 	if (x > 0)
 	{
 		if (y > 0)
 		{
-			cout << "1" << endl;
+			return 1;
 		}
 		else
 		{
-			cout << "4" << endl;
+			return 4;
 		}
 	}
 	else
 	{
 		if (y > 0)
 		{
-			cout << "2" << endl;
+			return 2;
 		}
 		else
 		{
-			cout << "3" << endl;
+			return 3;
 		}
 	}
 }
@@ -106,10 +113,11 @@ int Quater(float x,float y)
 int main()
 {
 	int i, x, y;
+	cout<<" Enter 3 points with non-zero real coordinates (x, y) to find the coordinate quarter numbers for three points with these non-zero coordinates"<<endl;
 	for (i = 0; i < 3; i++)
 	{
 		cin >> x >> y;
-		cout<< Quater(x,y)
+		cout<< Quater(x,y)<<endl;
 	}
 	return 0;
 }
@@ -142,6 +150,7 @@ float Fact2(int n)
 int main()
 {
 	int x;
+	cout<<"enter a number to calculate its double factorial"<<endl;
 	cin >> x;
 	cout << Fact2(x) << endl;
 }
