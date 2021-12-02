@@ -56,7 +56,7 @@ int main()
 }
 */
 
-//laba 14.3
+//laba 14.3 = вывести i
 
 /*
 int main()
@@ -74,7 +74,7 @@ int main()
 }
 */
 
-//laba 14.4
+//laba 14.4 - вывыести что-то еще
 
 /*
 int main()
