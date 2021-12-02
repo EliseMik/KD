@@ -101,6 +101,7 @@ int main()
 int main()
 {
 	int t,a,b;
+	cout<<"Enter positive integers A and B to find their greatest common divisor (GCD)"<<endl;
 	cin >> a >> b;
 	while (b != 0)
 	{
@@ -118,6 +119,7 @@ int main()
 int main()
 {
 	int n, i, k, z;
+	cout<< "Enter the integer N (> 1), which is the Fibonacci number: N = FK to find the integer K - the ordinal number of the Fibonacci number N."<<endl;
 	cin >> n;
 	k = 0;
 	i = 1;
