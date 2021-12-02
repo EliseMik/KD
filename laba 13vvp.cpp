@@ -44,6 +44,7 @@ int main()
 	for (i = 1; i < 2*n; i+=2)
 	{
 		s +=i;
+		cout << s << endl;
 	}
 	cout << s << endl;
 }
