@@ -15,23 +15,28 @@ int main()
 }
 */
 
-//laba 13.2   - N - совсем другое число - количество
-
+//laba 13.2   
 /*
+
+#include <iostream>
+using namespace std;
+
 int main()
 {
 	float n, i,s;
 	cout<< "enter an integer to find out the product of the multipliers (1.1 * 1.2 * 1.3 * . . . N)"<<endl;
 	cin >> n;
 	s = 1;
-	for (i = 1; i < (n-1)*10+1; i++)
+	for (i = 1; i <= n; i++)
 	{
 		s *= (1 + i*0.1);
 		
 	}
 	cout << s << endl;
 }
+
 */
+
 
 //laba 13.3
 /*
