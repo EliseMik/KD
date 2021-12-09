@@ -56,9 +56,10 @@ int main()
 }
 */
 
-//laba 14.3 = вывести i
+//laba 14.3   !!!!!!
 
 /*
+
 int main()
 {
 	int n, i, k;
@@ -70,13 +71,16 @@ int main()
 	{
 		k += i;
 	}
-	cout << k << endl;
+	cout << i-1 << endl;
 }
+
+
 */
 
-//laba 14.4 - вывыести что-то еще
+//laba 14.4 !!!!!
 
 /*
+
 int main()
 {
 	float p, s, i;
@@ -91,8 +95,9 @@ int main()
 		s *= p;
 		i++;
 	}
-	cout << i << endl;
+	cout << "in "<< i << " months it will be "<< s << " rubles" << endl;
 }
+
 */
 
 //laba 14.5
