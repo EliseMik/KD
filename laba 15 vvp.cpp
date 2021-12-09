@@ -127,7 +127,7 @@ int main()
 //laba 15.5
 
 /*
-float Fact2(int n)
+float Fact2(int n)     //функция подсчета факториала2
 {
 	float nn = 1;
 	if (n % 2 != 0)
