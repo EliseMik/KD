@@ -9,8 +9,10 @@ using namespace std;
 int main()
 {
     int n, i;
+    cout<< "Enter N>0"<<endl;
     cin >> n;
     int *A = new int[n];
+    cout<<"The array of positive odd numbers is.."<<endl;
     A[0] = 1;
     cout << A[0]<< " ";
     for (i = 1; i < n; i++)
@@ -32,6 +34,8 @@ int main()
 {
     int n,i;
     float a, d;
+    cout<<"Enter an integer N (> 1), as well as the first term A and the denominator D of the geometric progression"<<endl;
+    cout<<"to form and output an array of size N containing the N first terms of this progression: A, A·D, A·D2 , A·D3 , . . ."<<endl;
     cin >> n >> a >> d;
     int *A = new int[n];
     A[0] = a;
@@ -54,6 +58,8 @@ int main()
 int main()
 {
     int n, a, b, i;
+    cout<<"Enter integers N (> 2), A and B to form and output an integer array of size N"<<endl;
+    cout<<"The first element of which is equal to A, the second is equal to B, and each subsequent element is equal to the sum of all the previous ones"<<endl;
     cin >> n >> a >> b;
     int *A = new int[n];
     A[0] = a;
@@ -83,7 +89,7 @@ int main()
     {
         cin >> A[i];
     }
-
+    cout<<"array of the form A1, AN , A2, AN-1, A3, AN-2,"<<endl;
     for (i = 0; i < n/2; i++)
     {
         cout<<A[i]<<" "<<A[n-i-1]<<" ";
@@ -110,6 +116,7 @@ int main()
     {
         cin >> A[i];
     }
+    cout<<"first, its elements with odd numbers in ascending order of numbers, and then - elements with even numbers in descending order of numbers"<<endl;
     for (i = 0; i < n; i+=2)
     {
         cout << A[i] << " ";
