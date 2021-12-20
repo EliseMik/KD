@@ -1,5 +1,5 @@
 ﻿#include <iostream>
-#include <valarray>
+
 using namespace std;
 
 //laba 16.1
